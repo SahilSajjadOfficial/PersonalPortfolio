@@ -15,8 +15,8 @@ const Projects = () => {
       title: "Personal Portfolio",
       description: "After learning React I planned to build my own Portfolio Website and here it is.",
       tech: ["React", "Tailwind CSS", "Vite"],
-      githubLink: "",
-      liveLink: "",
+      githubLink: "https://github.com/SahilSajjadOfficial/PersonalPortfolio.git",
+      liveLink: "https://sahilsajjadportfolio.netlify.app/",
       image: PersonalPortfolio
     },
   ]
