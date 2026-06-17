@@ -1,6 +1,7 @@
 import React from 'react'
 import SpotifyProject from './assets/SpotifyProject.png'
 import PersonalPortfolio from './assets/PersonalPortfolio.png'
+import AutoGenCanvas from './assets/AutoGenCanvas.png'
 const Projects = () => {
   const projects = [
     {
@@ -9,7 +10,7 @@ const Projects = () => {
       tech: ["Html", "CSS", "JavaScript"],
       githubLink: "https://github.com/SahilSajjadOfficial/MusicPlayer",
       liveLink: "https://music-player-tau-one-87.vercel.app/",
-      image: SpotifyProject 
+      image: SpotifyProject
     },
     {
       title: "Personal Portfolio",
@@ -19,23 +20,31 @@ const Projects = () => {
       liveLink: "https://sahilsajjadportfolio.netlify.app/",
       image: PersonalPortfolio
     },
+    {
+      title: "AutoGenCanvas",
+      description: "Building a first Ai integrated design tool that generates stunning designs in seconds. With AutoGenCanvas, you can create professional-quality graphics effortlessly, making it perfect for designers and non-designers alike.",
+      tech: ["Typescript", "React", "Tailwind CSS", "Vite"],
+      githubLink: "https://github.com/SahilSajjadOfficial/PersonalPortfolio.git",
+      liveLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvashttps://lnkd.in/dfUYEDdZ",
+      image: AutoGenCanvas
+    },
   ]
 
   return (
     <section id="projects" className="py-20 bg-gray-50 -mx-8 px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-           Featured Projects 🚀
+          Featured Projects 🚀
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              
+
               <div className="h-64 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
