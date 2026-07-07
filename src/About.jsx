@@ -12,7 +12,7 @@ const About = () => {
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             My journey started with an FSc in Computer Science from the prestigious <span className="font-semibold text-purple-700">Islamia College Peshawar</span>. 
-            Currently, I am pursuing my Bachelor's in <span className="font-semibold text-gray-900">Software Engineering</span> at the <span className="font-semibold text-purple-700">Institute of Management Sciences (IMSciences)</span>, where I am in my 6th semester.
+            Currently, I am pursuing my Bachelor's in <span className="font-semibold text-gray-900">Software Engineering</span> at the <span className="font-semibold text-purple-700">Institute of Management Sciences (IMSciences)</span>, where I am in my 7th semester.
           </p>
         </div>
 
