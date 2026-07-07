@@ -13,7 +13,7 @@ const Home = () => {
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                     Welcome to my personal portfolio! Based in <span className="font-semibold text-gray-900">Peshawar, Pakistan</span> 🇵🇰, 
                     I am a 7th-semester <span className="font-semibold text-purple-700">Software Engineering</span> student at <span className="font-semibold text-purple-700">IMSciences</span>. 
-                    Currently, I am deeply engaged in learning the art of <span className="font-semibold text-blue-600">Front-end Web Development</span>.
+                    Currently, I am deeply engaged in learning the art of <span className="font-semibold text-blue-600">Full Stack / MERN Stack Development</span>.
                 </p>
                 
                 <div className="flex gap-4 justify-center md:justify-start">
