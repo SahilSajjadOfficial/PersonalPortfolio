@@ -24,7 +24,7 @@ const Projects = () => {
       title: "AutoGenCanvas",
       description: "Building a first Ai integrated design tool that generates stunning designs in seconds. With AutoGenCanvas, you can create professional-quality graphics effortlessly, making it perfect for designers and non-designers alike.",
       tech: ["Typescript", "React", "Tailwind CSS", "Vite"],
-      githubLink: "https://github.com/SahilSajjadOfficial/PersonalPortfolio.git",
+      githubLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvas",
       liveLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvashttps://lnkd.in/dfUYEDdZ",
       image: AutoGenCanvas
     },
