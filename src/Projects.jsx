@@ -28,6 +28,14 @@ const Projects = () => {
       liveLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvashttps://lnkd.in/dfUYEDdZ",
       image: AutoGenCanvas
     },
+    {
+      title: "Digital Khata",
+      description: "A modern, mobile-responsive digital ledger designed to replace traditional paper notebooks. Digital Khata helps shopkeepers track customer credit, automate pending balance calculations, and send instant payment reminders via WhatsApp, all in one intuitive interface.",
+      tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage API"],
+      githubLink: "https://github.com/SahilSajjadOfficial/Digital-Khata",
+      liveLink: "https://digital-khata-ecru.vercel.app/",
+      image: DigitalKhata
+    }
   ]
 
   return (
