@@ -34,7 +34,7 @@ const Projects = () => {
       tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage API"],
       githubLink: "https://github.com/SahilSajjadOfficial/Digital-Khata",
       liveLink: "https://digital-khata-ecru.vercel.app/",
-      image: DigitalKhata
+      image: "/DigitalKhata.png"
     }
   ]
 
