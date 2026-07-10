@@ -2,6 +2,7 @@ import React from 'react'
 import SpotifyProject from './assets/SpotifyProject.png'
 import PersonalPortfolio from './assets/PersonalPortfolio.png'
 import AutoGenCanvas from './assets/AutoGenCanvas.png'
+import DigitalKhata from './assets/DigitalKhata.png'
 const Projects = () => {
   const projects = [
     {
@@ -34,7 +35,7 @@ const Projects = () => {
       tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage API"],
       githubLink: "https://github.com/SahilSajjadOfficial/Digital-Khata",
       liveLink: "https://digital-khata-ecru.vercel.app/",
-      image: "/DigitalKhata.png"
+      image: DigitalKhata
     }
   ]
 
