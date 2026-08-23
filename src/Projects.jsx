@@ -1,89 +1,131 @@
 import React from 'react'
+import Reveal from './Reveal'
 import SpotifyProject from './assets/SpotifyProject.png'
 import PersonalPortfolio from './assets/PersonalPortfolio.png'
 import AutoGenCanvas from './assets/AutoGenCanvas.png'
 import DigitalKhata from './assets/DigitalKhata.png'
+
+const projects = [
+  {
+    title: 'Auto-Gen-Canvas',
+    description:
+      'A full-stack AI image generation web application with automated generation pipelines — an AI-integrated design tool that creates stunning, professional-quality graphics in seconds for designers and non-designers alike.',
+    tech: ['TypeScript', 'React', 'Supabase', 'Tailwind CSS'],
+    githubLink: 'https://github.com/SahilSajjadOfficial/AutoGenCanvas',
+    liveLink: 'https://github.com/SahilSajjadOfficial/AutoGenCanvas',
+    image: AutoGenCanvas,
+    featured: true,
+  },
+  {
+    title: 'Connect-Ustaad',
+    description:
+      'An on-demand digital marketplace connecting local skilled tradespersons in Peshawar directly with household clients — built as a full-stack, daily-wage labor marketplace platform.',
+    tech: ['React', 'Full Stack Architecture', 'REST APIs'],
+    githubLink: 'https://github.com/SahilSajjadOfficial',
+    liveLink: null,
+    image: null,
+    featured: true,
+  },
+  {
+    title: 'Digital Khata',
+    description:
+      'A modern, mobile-responsive digital ledger replacing paper notebooks. Helps shopkeepers track customer credit, automate pending balance calculations, and send instant payment reminders via WhatsApp.',
+    tech: ['React.js', 'Vite', 'Tailwind CSS', 'LocalStorage API'],
+    githubLink: 'https://github.com/SahilSajjadOfficial/Digital-Khata',
+    liveLink: 'https://digital-khata-ecru.vercel.app/',
+    image: DigitalKhata,
+  },
+  {
+    title: 'Personal Portfolio',
+    description: 'My personal portfolio website, built after learning React to showcase my projects and experience.',
+    tech: ['React', 'Tailwind CSS', 'Vite'],
+    githubLink: 'https://github.com/SahilSajjadOfficial/PersonalPortfolio.git',
+    liveLink: 'https://sahilsajjadportfolio.netlify.app/',
+    image: PersonalPortfolio,
+  },
+  {
+    title: 'Spotify Clone',
+    description: 'A music player clone built after learning JavaScript to some extent — my first real front-end project.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    githubLink: 'https://github.com/SahilSajjadOfficial/MusicPlayer',
+    liveLink: 'https://music-player-tau-one-87.vercel.app/',
+    image: SpotifyProject,
+  },
+]
+
 const Projects = () => {
-  const projects = [
-    {
-      title: "Spotify Clone",
-      description: "After learning Javascript upto some extent I started to build a Spotify Clone and here it is.",
-      tech: ["Html", "CSS", "JavaScript"],
-      githubLink: "https://github.com/SahilSajjadOfficial/MusicPlayer",
-      liveLink: "https://music-player-tau-one-87.vercel.app/",
-      image: SpotifyProject
-    },
-    {
-      title: "Personal Portfolio",
-      description: "After learning React I planned to build my own Portfolio Website and here it is.",
-      tech: ["React", "Tailwind CSS", "Vite"],
-      githubLink: "https://github.com/SahilSajjadOfficial/PersonalPortfolio.git",
-      liveLink: "https://sahilsajjadportfolio.netlify.app/",
-      image: PersonalPortfolio
-    },
-    {
-      title: "AutoGenCanvas",
-      description: "Building a first Ai integrated design tool that generates stunning designs in seconds. With AutoGenCanvas, you can create professional-quality graphics effortlessly, making it perfect for designers and non-designers alike.",
-      tech: ["Typescript", "React", "Tailwind CSS", "Vite"],
-      githubLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvas",
-      liveLink: "https://github.com/SahilSajjadOfficial/AutoGenCanvashttps://lnkd.in/dfUYEDdZ",
-      image: AutoGenCanvas
-    },
-    {
-      title: "Digital Khata",
-      description: "A modern, mobile-responsive digital ledger designed to replace traditional paper notebooks. Digital Khata helps shopkeepers track customer credit, automate pending balance calculations, and send instant payment reminders via WhatsApp, all in one intuitive interface.",
-      tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage API"],
-      githubLink: "https://github.com/SahilSajjadOfficial/Digital-Khata",
-      liveLink: "https://digital-khata-ecru.vercel.app/",
-      image: DigitalKhata
-    }
-  ]
-
   return (
-    <section id="projects" className="py-20 bg-gray-50 -mx-8 px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-          Featured Projects 🚀
-        </h2>
+    <section id="projects" className="relative py-24 md:py-32 bg-white/[0.02]">
+      <div className="max-w-6xl mx-auto px-6">
+        <Reveal>
+          <p className="text-purple-400 font-semibold tracking-wide uppercase text-sm mb-3">Portfolio</p>
+          <h2 className="font-display text-4xl font-bold text-white mb-16">
+            Featured Projects 🚀
+          </h2>
+        </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-
-              <div className="h-64 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {project.tech.map((tech, techIndex) => (
-                    <span key={techIndex} className="px-3 py-1 bg-purple-50 text-purple-600 text-sm font-medium rounded-full">
-                      {tech}
+            <Reveal key={project.title} delay={(index % 2) * 100} className="h-full">
+              <div className="group glass rounded-3xl overflow-hidden hover:border-white/20 transition-all duration-300 h-full flex flex-col">
+                <div className="h-56 overflow-hidden relative">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-linear-to-br from-purple-600/40 via-fuchsia-600/30 to-blue-600/40 flex items-center justify-center">
+                      <span className="text-6xl">🛠️</span>
+                    </div>
+                  )}
+                  {project.featured && (
+                    <span className="absolute top-4 left-4 text-xs font-bold text-white bg-linear-to-r from-purple-600 to-blue-600 px-3 py-1 rounded-full shadow-lg">
+                      Key Project
                     </span>
-                  ))}
+                  )}
                 </div>
 
-                <div className="flex gap-4">
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-6 py-3 bg-gray-900 text-white rounded-full font-bold hover:bg-gray-800 transition-all">
-                    GitHub
-                  </a>
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-full font-bold hover:bg-purple-50 transition-all">
-                    Live Demo
-                  </a>
+                <div className="p-7 flex flex-col flex-1">
+                  <h3 className="font-display text-xl font-bold text-white mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-6 leading-relaxed flex-1">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-7">
+                    {project.tech.map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-purple-500/10 text-purple-300 border border-purple-500/20 text-xs font-medium rounded-full">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 text-center px-5 py-3 bg-white text-black rounded-full font-bold text-sm hover:bg-gray-200 transition-all"
+                    >
+                      GitHub
+                    </a>
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-5 py-3 border-2 border-purple-500/40 text-purple-300 rounded-full font-bold text-sm hover:bg-purple-500/10 transition-all"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
