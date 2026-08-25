@@ -4,8 +4,20 @@ import SpotifyProject from './assets/SpotifyProject.png'
 import PersonalPortfolio from './assets/PersonalPortfolio.png'
 import AutoGenCanvas from './assets/AutoGenCanvas.png'
 import DigitalKhata from './assets/DigitalKhata.png'
+import LurnivaLanding from './assets/LurnivaLanding.png'
+
 
 const projects = [
+  {
+    title: 'Lurniva Landing',
+    description:
+      'Its a whole new landing page for Lurniva, a platform that provides online courses and learning resources. The landing page is designed to be visually appealing and user-friendly, with clear calls to action and easy navigation.',
+    tech: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+    githubLink: 'https://github.com/SahilSajjadOfficial/landingpage-lurniva',
+    liveLink: 'https://landingpage-lurniva.vercel.app/',
+    image: LurnivaLanding,
+    featured: true,
+  },
   {
     title: 'Auto-Gen-Canvas',
     description:
