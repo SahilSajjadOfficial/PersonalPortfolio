@@ -10,6 +10,13 @@ const roles = [
     description: 'Lead campus outreach initiatives, coordinating student technical hackathons and developer enablement sessions.',
   },
   {
+    icon: '⚡',
+    title: 'Supabase Peshawar Core Team Member',
+    org: 'Supabase Peshawar',
+    period: '2026',
+    description: 'Being a core team member in the Supabase Peshawar chapter , my role involves helping the participants and making awareness about the supabase and its uses and benefits.',
+  },
+  {
     icon: '☁️',
     title: 'Media & Graphics Team Member',
     org: 'Cloud Native Computing Foundation (CNCF) Peshawar',
